@@ -5,6 +5,9 @@
   --font-color--secondary: #333350;
   --background-color--primary: #252530;
   --color--orange: #ffb469;
+  --color-ultramarine: #1423ff;
+  --color-eggplant: #77008f;
+  --color-cerise: #ff9ed8;
 }
 
 body {
@@ -66,4 +69,143 @@ body {
 .header__navigation-item:last-child:hover.header__navigation-item:last-child::after,
 .header__navigation-item:last-child:focus.header__navigation-item:last-child::after {
   display: none;
+}
+
+.landing-page__pinned-board {
+  display: grid;
+  gap: 25px;
+  grid-template-areas:
+    'card1 card2 card3'
+    'card1 card4 card5';
+  min-height: 400px;
+  padding: 0 50px;
+}
+
+.landing-page__pinned-board__card {
+  background-size: 100%;
+  background-position: 50%;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.landing-page__pinned-board__card:hover {
+  transform: translate(0, -4px);
+  transition: 0.3s ease;
+}
+
+.card__badget {
+  font-family: var(--font--secondary);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: white;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  z-index: 10;
+}
+
+.card__overlay {
+  opacity: 0.6;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.card__description {
+  color: white;
+  z-index: 1;
+  margin-top: 40px;
+}
+
+.card__description--author {
+  font-family: var(--font--secondary);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__description--title {
+  font-family: var(--font--primary);
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.landing-page__pinned-board__card:nth-child(1) {
+  grid-area: card1;
+  background-image: url('/assets/images/living-room.jpg');
+  color: black;
+}
+
+.landing-page__pinned-board__card:nth-child(1) .card__description--title {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.landing-page__pinned-board__card:nth-child(2) {
+  grid-area: card2;
+  background-image: url('/assets/images/kitchen.jpg');
+}
+
+.landing-page__pinned-board__card:nth-child(2) .card__overlay {
+  background-color: var(--color-ultramarine);
+}
+
+.landing-page__pinned-board__card:nth-child(2) .card__badget {
+  color: var(--color-ultramarine);
+}
+
+.landing-page__pinned-board__card:nth-child(3) {
+  grid-area: card3;
+  background-color: var(--color--orange);
+}
+
+.landing-page__pinned-board__card:nth-child(3) .card__badget {
+  color: var(--color--orange);
+}
+
+.landing-page__pinned-board__card:nth-child(4) {
+  grid-area: card4;
+  background-image: url('/assets/images/office.jpg');
+}
+
+.landing-page__pinned-board__card:nth-child(4) .card__overlay {
+  background-color: var(--color-eggplant);
+}
+
+.landing-page__pinned-board__card:nth-child(4) .card__badget {
+  color: var(--color-eggplant);
+}
+
+.landing-page__pinned-board__card:nth-child(5) {
+  grid-area: card5;
+  background-image: url('/assets/images/kid.jpg');
+}
+
+.landing-page__pinned-board__card:nth-child(5) .card__overlay {
+  background-color: var(--color-cerise);
+}
+
+.landing-page__pinned-board__card:nth-child(5) .card__badget {
+  color: var(--color-cerise);
+}
+
+.landing-page__pinned-board__card:nth-child(3) .card__badget,
+.landing-page__pinned-board__card:nth-child(5) .card__badget {
+  background-color: var(--background-color--primary) !important;
+}
+
+.landing-page__pinned-board__card:nth-child(3) .card__description,
+.landing-page__pinned-board__card:nth-child(5) .card__description {
+  color: var(--font-color--secondary);
 }

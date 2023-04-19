@@ -1,0 +1,58 @@
+@use "../../variables/colors" as colors;
+@use "../../variables/fonts" as fonts;
+@use "../../mixins/card-elements";
+
+.landing-page__case-study {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 200px;
+    
+    &__card {
+        padding: 100px;
+        min-height: 400px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        cursor: pointer;
+        max-width: 1200px;
+       
+        .card__overlay {
+            @include card-elements.overlay(colors.$color--secondary);
+            display: block;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                transition: transform .3s ease-in-out;
+                
+                &:hover {
+                    transform: translateZ(0) scale(1.05);
+                }
+            }
+        }
+
+        .card__badget__group {
+            display: flex;
+
+            .card__badget {
+                margin-right: 10px;
+                @include card-elements.card-badget(colors.$color--primary, transparent)
+                
+            }
+        }
+
+        .card__description--title {
+            @include card-elements.description--title(4rem, 0, 5rem);
+            color: colors.$color--primary;
+        }
+
+        .card__description--author {
+            @include card-elements.description--author(1.2rem, 0);
+        }
+    }
+
+}

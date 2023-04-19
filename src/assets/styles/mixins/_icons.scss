@@ -1,0 +1,8 @@
+@mixin dot($background-color) {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: $background-color;
+    position: absolute;
+    border-radius: 50%;
+}

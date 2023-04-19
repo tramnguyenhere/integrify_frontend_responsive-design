@@ -1,0 +1,13 @@
+@use "./variables/colors" as colors;
+@use "./variables/fonts" as fonts;
+
+@use "./components/header";
+@use "./components/main";
+
+body {
+  background-color: colors.$background-color--primary;
+  margin: 0;
+}
+  
+  
+  

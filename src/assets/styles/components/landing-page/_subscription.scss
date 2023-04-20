@@ -1,5 +1,6 @@
 @use "../../variables/colors" as colors;
 @use "../../variables/fonts" as fonts;
+@use "../../mixins/buttons" as buttons;
 
 .landing-page__subscription {
     width: 700px;
@@ -54,6 +55,10 @@
             &:focus {
                 width: 100%;
             }
+        }
+
+        .landing-page__button {
+            @include buttons.button(fit-content);
         }
     }
 

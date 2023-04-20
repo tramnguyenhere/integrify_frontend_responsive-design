@@ -1,8 +1,10 @@
 @use "./variables/colors" as colors;
 @use "./variables/fonts" as fonts;
+@use "./mixins/icons" as icons;
 
 @use "./components/header";
 @use "./components/main";
+@use "./components/footer";
 
 body {
   background-color: colors.$background-color--primary;
@@ -26,4 +28,35 @@ body {
   width: fit-content;
   width: fit-content;
 }  
+
+.navigation-bar {
+  display: flex;
+  justify-content: start;
+  color: colors.$color--primary;
+  font-family: fonts.$font--secondary;
   
+  .navigation-item {
+    text-decoration: none;
+    margin: 0 10px;
+    color: colors.$color--primary !important;
+    font-weight: 700;
+    position: relative;
+    cursor: pointer;
+    width: max-content;
+
+    &:hover.navigation-item::after {
+      @include icons.dot(colors.$color--primary);
+      opacity: 0.5;
+    }
+
+    &:focus.navigation-item::after {
+      @include icons.dot(colors.$color--orange)
+    }
+
+    &:nth-child(8) {
+      &:hover.navigation-item:last-child::after, &:focus.navigation-item:last-child::after {
+        display: none;
+      }
+    }
+  }
+}

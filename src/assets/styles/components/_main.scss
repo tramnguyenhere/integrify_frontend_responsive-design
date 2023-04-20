@@ -14,7 +14,7 @@ z-index: 1;
 margin-top: 40px;
 
 &--author {
-    @include card-elements.description--author(1rem, 10px 0)
+    @include card-elements.description--author(1rem, 10px 0, colors.$color--primary)
 }
 
 &--title {

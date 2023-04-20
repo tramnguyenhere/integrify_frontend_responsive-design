@@ -2,36 +2,40 @@
 @use "../../variables/fonts" as fonts;
 @use "../../mixins/card-elements";
 
+@import url("font-awesome/css/fontawesome-all.min.css");
+
 .landing-page__case-study {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 200px;
+    margin: 20px 200px;
     
     &__card {
         padding: 100px;
-        min-height: 400px;
+        min-height: 450px;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         cursor: pointer;
         max-width: 1200px;
+        margin: 20px 0;
+
+        &:hover {
+            .card__overlay__image {
+                transition: transform .3s ease-in;
+                transform: translateZ(0) scale(1.05);
+                z-index: -999;
+            }
+        }
        
         .card__overlay {
             @include card-elements.overlay(colors.$color--secondary);
-            display: block;
-            overflow: hidden;
 
-            img {
+            .card__overlay__image {
                 width: 100%;
                 height: 100%;
-                border-radius: 20px;
-                transition: transform .3s ease-in-out;
-                
-                &:hover {
-                    transform: translateZ(0) scale(1.05);
-                }
+                position: relative;
             }
         }
 
@@ -48,10 +52,61 @@
         .card__description--title {
             @include card-elements.description--title(4rem, 0, 5rem);
             color: colors.$color--primary;
+            transition: .3s linear;
+
+            &::after {
+                content: "\f061";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                font-size: 3rem;
+                transform: translateX(0);
+                opacity: 0;
+                position: absolute;
+            }
+
+            &:hover.card__description--title::after {
+                transform: translateX(20px);
+                transition: all 0.3s linear;
+                opacity: 1;
+            }
+        }
+
+        .card__description--content {
+            @include card-elements.description--content(1.5rem, colors.$color--secondary);
+
+            &::before {
+                @include card-elements.divider(1px, colors.$color--secondary)
+            }
         }
 
         .card__description--author {
-            @include card-elements.description--author(1.2rem, 0);
+            @include card-elements.description--author(1rem, 0, colors.$color--primary);
+        }
+
+        &:nth-child(2) {
+            .card__badget {
+                @include card-elements.card-badget(colors.$color--secondary, transparent)
+            }
+
+            .card__description--title {
+                color: colors.$color--secondary;
+            }
+
+            .card__description--author {
+                @include card-elements.description--author(1rem, 0, colors.$color--secondary);
+            }
+
+            .card__overlay {
+                &::before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    background-color: colors.$color--amber;
+                    opacity: .9;
+                    z-index: 11111;
+                    position: absolute;
+                }
+            }
         }
     }
 

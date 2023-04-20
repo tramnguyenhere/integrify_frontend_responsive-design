@@ -81,16 +81,17 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 111110;
   color: #333350;
   border: 1px solid #333350;
+  transition: all 0.3s ease-in-out;
   border: none;
 }
 .landing-page__pinned-board__card:nth-child(1) .card__description--title {
   font-family: "Corben", cursive;
   line-height: 4rem;
   font-size: 3rem;
-  margin: 0;
+  margin: 30px 0;
   z-index: 1;
   color: #ebebeb;
 }
@@ -119,9 +120,10 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 111110;
   color: #1423ff;
   border: 1px solid #1423ff;
+  transition: all 0.3s ease-in-out;
 }
 .landing-page__pinned-board__card:nth-child(3) {
   grid-area: card3;
@@ -136,9 +138,10 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 111110;
   color: #ffb469;
   border: 1px solid #ffb469;
+  transition: all 0.3s ease-in-out;
 }
 .landing-page__pinned-board__card:nth-child(3) .card__description--title, .landing-page__pinned-board__card:nth-child(3) .card__description--author {
   color: #333350;
@@ -168,9 +171,10 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 111110;
   color: #77008f;
   border: 1px solid #77008f;
+  transition: all 0.3s ease-in-out;
 }
 .landing-page__pinned-board__card:nth-child(5) {
   grid-area: card5;
@@ -197,9 +201,10 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 111110;
   color: #ff9ed8;
   border: 1px solid #ff9ed8;
+  transition: all 0.3s ease-in-out;
 }
 .landing-page__pinned-board__card:nth-child(5) .card__description--title, .landing-page__pinned-board__card:nth-child(5) .card__description--author {
   color: #333350;
@@ -209,11 +214,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 200px;
+  margin: 20px 160px;
 }
 .landing-page__case-study__card {
   padding: 100px;
-  min-height: 450px;
+  max-height: 450px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -246,6 +251,7 @@
 }
 .landing-page__case-study__card .card__badget__group {
   display: flex;
+  margin: 20px 0;
 }
 .landing-page__case-study__card .card__badget__group .card__badget {
   margin-right: 10px;
@@ -257,15 +263,30 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 111110;
   color: #ebebeb;
   border: 1px solid #ebebeb;
+  transition: all 0.3s ease-in-out;
+}
+.landing-page__case-study__card .card__badget__group .card__badget:hover {
+  font-family: "Mulish", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background-color: #ebebeb;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  z-index: 111110;
+  color: #333350;
+  border: 1px solid #333350;
+  transition: all 0.3s ease-in-out;
 }
 .landing-page__case-study__card .card__description--title {
   font-family: "Corben", cursive;
   line-height: 5rem;
   font-size: 4rem;
-  margin: 0;
+  margin: 30px 0;
   z-index: 1;
   color: #ebebeb;
   color: #ebebeb;
@@ -293,6 +314,7 @@
   font-weight: 700;
   position: relative;
   padding-top: 20px;
+  margin: 30px 0;
 }
 .landing-page__case-study__card .card__description--content::before {
   content: "";
@@ -306,11 +328,11 @@
   font-family: "Mulish", sans-serif;
   font-size: 1rem;
   font-weight: 700;
-  margin: 0;
+  margin: 30px 0;
   z-index: 1;
   color: #ebebeb;
 }
-.landing-page__case-study__card:nth-child(2) .card__badget {
+.landing-page__case-study__card:nth-child(2) .card__badget, .landing-page__case-study__card:nth-child(4) .card__badget {
   font-family: "Mulish", sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
@@ -319,29 +341,177 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 111110;
   color: #333350;
   border: 1px solid #333350;
+  transition: all 0.3s ease-in-out;
 }
-.landing-page__case-study__card:nth-child(2) .card__description--title {
-  color: #333350;
-}
-.landing-page__case-study__card:nth-child(2) .card__description--author {
+.landing-page__case-study__card:nth-child(2) .card__badget:hover, .landing-page__case-study__card:nth-child(4) .card__badget:hover {
   font-family: "Mulish", sans-serif;
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0;
-  z-index: 1;
-  color: #333350;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  background-color: #333350;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 20px;
+  z-index: 111110;
+  color: #ffdd87;
+  border: 1px solid #ffdd87;
+  transition: all 0.3s ease-in-out;
+  border: none;
 }
-.landing-page__case-study__card:nth-child(2) .card__overlay::before {
+.landing-page__case-study__card:nth-child(2) .card__description--title, .landing-page__case-study__card:nth-child(2) .card__description--content, .landing-page__case-study__card:nth-child(2) .card__description--author, .landing-page__case-study__card:nth-child(4) .card__description--title, .landing-page__case-study__card:nth-child(4) .card__description--content, .landing-page__case-study__card:nth-child(4) .card__description--author {
+  color: #333350 !important;
+}
+.landing-page__case-study__card:nth-child(2) .card__overlay::before, .landing-page__case-study__card:nth-child(4) .card__overlay::before {
   content: "";
   width: 100%;
   height: 100%;
   background-color: #ffdd87;
-  opacity: 0.9;
+  opacity: 0.7;
   z-index: 11111;
   position: absolute;
+}
+
+.landing-page__case-study__group {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.landing-page__case-study__group .landing-page__case-study__card {
+  flex-basis: 10%;
+  padding: 40px;
+  height: 470px;
+  justify-content: flex-start;
+  flex-basis: calc(33% - 130px);
+  margin-top: 0;
+}
+.landing-page__case-study__group .landing-page__case-study__card:nth-child(1), .landing-page__case-study__group .landing-page__case-study__card:nth-child(2) {
+  flex-basis: calc(50% - 150px);
+  margin-bottom: 0;
+}
+.landing-page__case-study__group .landing-page__case-study__card:nth-child(1) .card__overlay::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #77008f;
+  opacity: 0.7;
+  z-index: 11111;
+  position: absolute;
+}
+.landing-page__case-study__group .landing-page__case-study__card:nth-child(2) .card__overlay::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ffb469;
+  opacity: 0.7;
+  z-index: 11111;
+  position: absolute;
+}
+.landing-page__case-study__group .landing-page__case-study__card:nth-child(4) .card__overlay::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #ff9ed8;
+  opacity: 0.7;
+  z-index: 11111;
+  position: absolute;
+}
+.landing-page__case-study__group .landing-page__case-study__card:nth-child(3) .card__description--title, .landing-page__case-study__group .landing-page__case-study__card:nth-child(4) .card__description--title, .landing-page__case-study__group .landing-page__case-study__card:nth-child(5) .card__description--title {
+  font-family: "Corben", cursive;
+  line-height: 3rem;
+  font-size: 2rem;
+  margin: 30px 0;
+  z-index: 1;
+  color: #ebebeb;
+}
+.landing-page__case-study__group .landing-page__case-study__card .card__description--title {
+  font-family: "Corben", cursive;
+  line-height: 3.5rem;
+  font-size: 2.5rem;
+  margin: 30px 0;
+  z-index: 1;
+  color: #ebebeb;
+}
+.landing-page__case-study__group .landing-page__case-study__card .card__description--title::after {
+  content: "\f061";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.7rem;
+  transform: translateX(0);
+  opacity: 0;
+  position: absolute;
+}
+.landing-page__case-study__group .landing-page__case-study__card .card__description--title:hover.card__description--title::after {
+  transform: translateX(10px);
+  transition: all 0.3s linear;
+  opacity: 1;
+}
+.landing-page__case-study__group .landing-page__case-study__card .card__description--content {
+  font-family: "Mulish", sans-serif;
+  font-size: 1rem;
+  z-index: 1;
+  color: #ebebeb;
+  font-weight: 700;
+  position: relative;
+  padding-top: 20px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+.landing-page__subscription {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #ebebeb;
+  margin: 50px 70px;
+}
+.landing-page__subscription .landing-page__subscription__heading {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-family: "Corben", cursive;
+  margin: 0;
+}
+.landing-page__subscription .landing-page__subscription__sub-heading {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+}
+.landing-page__subscription .landing-page__subscription__form {
+  margin-top: 40px;
+}
+.landing-page__subscription .landing-page__subscription__form .form__input {
+  width: 80%;
+  font-size: 2rem;
+  background: transparent;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 2px solid #ebebeb;
+  margin-bottom: 80px;
+  color: #ebebeb;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  font-family: "Mulish", sans-serif;
+  padding: 10px 0;
+  transition: all 0.4s ease-in;
+}
+.landing-page__subscription .landing-page__subscription__form .form__input::placeholder {
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.landing-page__subscription .landing-page__subscription__form .form__input:focus {
+  width: 100%;
 }
 
 .card__badget {
@@ -353,13 +523,14 @@
   width: fit-content;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 10;
+  z-index: 111110;
   color: #333350;
   border: 1px solid #333350;
+  transition: all 0.3s ease-in-out;
 }
 
 .card__description {
-  color: white;
+  color: #ebebeb;
   z-index: 1;
   margin-top: 40px;
 }
@@ -375,14 +546,65 @@
   font-family: "Corben", cursive;
   line-height: 2rem;
   font-size: 1.5rem;
-  margin: 0;
+  margin: 30px 0;
   z-index: 1;
   color: #ebebeb;
+}
+
+.landing-page {
+  margin: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing-page .landing-page__sub-title {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  color: #ebebeb;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  padding: 60px 0;
+}
+.landing-page .landing-page__button {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ebebeb;
+  background-color: #363643;
+  letter-spacing: 3px;
+  padding: 30px;
+  width: 80%;
+  margin: 0 40px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.landing-page .landing-page__button:hover {
+  background-color: #ffb469;
+  color: #333350;
 }
 
 body {
   background-color: #252530;
   margin: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+.typing-text {
+  animation: typing 3s steps(40, end) infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ebebeb;
+  width: fit-content;
+  width: fit-content;
 }
 
 /*# sourceMappingURL=style.css.map */

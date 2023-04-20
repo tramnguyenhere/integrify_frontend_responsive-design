@@ -8,6 +8,22 @@ body {
   background-color: colors.$background-color--primary;
   margin: 0;
 }
-  
-  
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+
+.typing-text {
+  animation: typing 3s steps(40, end) infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid colors.$color--primary;
+  width: fit-content;
+  width: fit-content;
+}  
   

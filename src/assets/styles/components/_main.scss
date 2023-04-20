@@ -1,7 +1,10 @@
 @use "./landing-page/pinned-board";
 @use "./landing-page/case-study";
+@use "./landing-page/subscription";
 
 @use "../variables/colors" as colors;
+@use "../variables/fonts" as fonts;
+@use "../mixins/buttons" as buttons;
 @use "../mixins/card-elements";
 
 .card__badget {
@@ -9,7 +12,7 @@
 }
   
 .card__description {
-color: white;
+color: colors.$color--primary;
 z-index: 1;
 margin-top: 40px;
 
@@ -20,4 +23,24 @@ margin-top: 40px;
 &--title {
     @include card-elements.description--title(1.5rem, 0, 2rem)
 }
+}
+
+.landing-page {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .landing-page__sub-title {
+        font-family: fonts.$font--secondary;
+        font-weight: 800;
+        color: colors.$color--primary;
+        letter-spacing: 3px;
+        font-size: 1rem;
+        padding: 60px 0;
+    }
+
+    .landing-page__button {
+        @include buttons.button(80%);
+    }
 }

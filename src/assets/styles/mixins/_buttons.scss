@@ -1,0 +1,23 @@
+@use "../variables/colors" as colors;
+@use "../variables/fonts" as fonts;
+
+@mixin button($width) {
+    font-size: .9rem;
+    font-weight: 700;
+    color: colors.$color--primary;
+    background-color: colors.$button__background-color;
+    letter-spacing: 3px;
+    padding: 30px;
+    width: $width;
+    margin: 0 40px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        background-color: colors.$color--orange;
+        color: colors.$color--secondary;
+    }
+}

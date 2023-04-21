@@ -80,5 +80,5 @@ C:.
 Clone the repository from github:
 
 ```
-git clone https://github.com/tramnguyenhere/integrify_frontend_basic-html.git
+git clone https://github.com/tramnguyenhere/fs15_2-responsive-design.git
 ```

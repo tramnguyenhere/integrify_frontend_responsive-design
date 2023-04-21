@@ -21,6 +21,7 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 20px 30px;
+      background-blend-mode: overlay;
 
       &:hover {
         transform: translate(0, -4px);
@@ -30,7 +31,6 @@
       &:nth-child(1) {
         grid-area: card1;
         background-image: url('/src/assets/images/living-room.jpg');
-        color: black;
 
         .card__badget {
           @include card-elements.card-badget(colors.$color--secondary, colors.$color--primary);
@@ -44,12 +44,8 @@
 
       &:nth-child(2) {
         grid-area: card2;
-        background-image: url('/src/assets/images/kitchen.jpg');
-
-        .card__overlay {
-          @include card-elements.overlay(colors.$color--ultramarine)
-        }
-
+        background-image: url('/src/assets/images/kitchen.jpg'),  linear-gradient( colors.$color--ultramarine, colors.$color--ultramarine);
+        
         .card__badget {
           @include card-elements.card-badget(colors.$color--ultramarine, colors.$color--primary);
         }
@@ -70,11 +66,7 @@
 
       &:nth-child(4) {
         grid-area: card4;
-        background-image: url('/src/assets/images/office.jpg');
-
-        .card__overlay {
-          @include card-elements.overlay(colors.$color--eggplant)
-        }
+        background-image: url('/src/assets/images/office.jpg'),  linear-gradient( colors.$color--eggplant, colors.$color--eggplant);
 
         .card__badget {
           @include card-elements.card-badget(colors.$color--eggplant, colors.$color--primary)
@@ -83,11 +75,7 @@
 
       &:nth-child(5) {
         grid-area: card5;
-        background-image: url('/src/assets/images/kid.jpg');
-
-        .card__overlay {
-          @include card-elements.overlay(colors.$color--cerise)
-        }
+        background-image: url('/src/assets/images/kid.jpg'),  linear-gradient( colors.$color--cerise, colors.$color--cerise);
 
         .card__badget {
           @include card-elements.card-badget(colors.$color--cerise, colors.$color--secondary);

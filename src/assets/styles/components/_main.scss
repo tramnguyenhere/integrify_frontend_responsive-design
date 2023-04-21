@@ -1,6 +1,8 @@
 @use "./landing-page/pinned-board";
 @use "./landing-page/case-study";
 @use "./landing-page/subscription";
+@use "../shared/navigation";
+@use "../shared/animations";
 
 @use "../variables/colors" as colors;
 @use "../variables/fonts" as fonts;

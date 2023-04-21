@@ -30,6 +30,7 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 30px;
+  background-blend-mode: overlay;
 }
 .landing-page__pinned-board__card:hover {
   transform: translate(0, -4px);
@@ -38,7 +39,6 @@
 .landing-page__pinned-board__card:nth-child(1) {
   grid-area: card1;
   background-image: url("/src/assets/images/living-room.jpg");
-  color: black;
 }
 .landing-page__pinned-board__card:nth-child(1) .card__badget {
   font-family: "Mulish", sans-serif;
@@ -65,19 +65,7 @@
 }
 .landing-page__pinned-board__card:nth-child(2) {
   grid-area: card2;
-  background-image: url("/src/assets/images/kitchen.jpg");
-}
-.landing-page__pinned-board__card:nth-child(2) .card__overlay {
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 20px;
-  background-color: #1423ff;
-  display: block;
-  overflow: hidden;
+  background-image: url("/src/assets/images/kitchen.jpg"), linear-gradient(#1423ff, #1423ff);
 }
 .landing-page__pinned-board__card:nth-child(2) .card__badget {
   font-family: "Mulish", sans-serif;
@@ -116,19 +104,7 @@
 }
 .landing-page__pinned-board__card:nth-child(4) {
   grid-area: card4;
-  background-image: url("/src/assets/images/office.jpg");
-}
-.landing-page__pinned-board__card:nth-child(4) .card__overlay {
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 20px;
-  background-color: #77008f;
-  display: block;
-  overflow: hidden;
+  background-image: url("/src/assets/images/office.jpg"), linear-gradient(#77008f, #77008f);
 }
 .landing-page__pinned-board__card:nth-child(4) .card__badget {
   font-family: "Mulish", sans-serif;
@@ -146,19 +122,7 @@
 }
 .landing-page__pinned-board__card:nth-child(5) {
   grid-area: card5;
-  background-image: url("/src/assets/images/kid.jpg");
-}
-.landing-page__pinned-board__card:nth-child(5) .card__overlay {
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 20px;
-  background-color: #ff9ed8;
-  display: block;
-  overflow: hidden;
+  background-image: url("/src/assets/images/kid.jpg"), linear-gradient(#ff9ed8, #ff9ed8);
 }
 .landing-page__pinned-board__card:nth-child(5) .card__badget {
   font-family: "Mulish", sans-serif;
@@ -185,37 +149,25 @@
   margin: 20px 160px;
 }
 .landing-page__case-study__card {
-  padding: 100px;
   max-height: 450px;
+  max-width: 1200px;
+  padding: 100px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   cursor: pointer;
-  max-width: 1200px;
   margin: 20px 0;
-}
-.landing-page__case-study__card:hover .card__overlay__image {
-  transition: transform 0.3s ease-in;
-  transform: translateZ(0) scale(1.05);
-  z-index: -999;
-}
-.landing-page__case-study__card .card__overlay {
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  transition: all 0.5s ease-in;
   border-radius: 20px;
-  background-color: #333350;
-  display: block;
-  overflow: hidden;
 }
-.landing-page__case-study__card .card__overlay .card__overlay__image {
-  width: 100%;
-  height: 100%;
-  position: relative;
+.landing-page__case-study__card:hover {
+  background-size: 110%;
 }
 .landing-page__case-study__card .card__badget__group {
   display: flex;
@@ -341,6 +293,15 @@
   z-index: 11111;
   position: absolute;
 }
+.landing-page__case-study #large-card--1 {
+  background-image: url("/src/assets/images/living-room--3d.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+}
+.landing-page__case-study #large-card--2 {
+  background-image: url("/src/assets/images/minimal-room.jpg"), linear-gradient(rgba(255, 221, 135, 0.6), rgba(255, 221, 135, 0.6));
+}
+.landing-page__case-study #large-card--3 {
+  background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+}
 
 .landing-page__case-study__group {
   display: flex;
@@ -353,49 +314,14 @@
 .landing-page__case-study__group .landing-page__case-study__card {
   flex-basis: 10%;
   padding: 40px;
-  height: 470px;
+  height: 370px;
   justify-content: flex-start;
   flex-basis: calc(33% - 130px);
   margin-top: 0;
+  background-size: 150%;
 }
-.landing-page__case-study__group .landing-page__case-study__card:nth-child(1), .landing-page__case-study__group .landing-page__case-study__card:nth-child(2) {
-  flex-basis: calc(50% - 150px);
-  margin-bottom: 0;
-}
-.landing-page__case-study__group .landing-page__case-study__card:nth-child(1) .card__overlay::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #77008f;
-  opacity: 0.7;
-  z-index: 11111;
-  position: absolute;
-}
-.landing-page__case-study__group .landing-page__case-study__card:nth-child(2) .card__overlay::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #ffb469;
-  opacity: 0.7;
-  z-index: 11111;
-  position: absolute;
-}
-.landing-page__case-study__group .landing-page__case-study__card:nth-child(4) .card__overlay::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #ff9ed8;
-  opacity: 0.7;
-  z-index: 11111;
-  position: absolute;
-}
-.landing-page__case-study__group .landing-page__case-study__card:nth-child(3) .card__description--title, .landing-page__case-study__group .landing-page__case-study__card:nth-child(4) .card__description--title, .landing-page__case-study__group .landing-page__case-study__card:nth-child(5) .card__description--title {
-  font-family: "Corben", cursive;
-  line-height: 3rem;
-  font-size: 2rem;
-  margin: 30px 0;
-  z-index: 1;
-  color: #ebebeb;
+.landing-page__case-study__group .landing-page__case-study__card:hover {
+  background-size: 160%;
 }
 .landing-page__case-study__group .landing-page__case-study__card .card__description--title {
   font-family: "Corben", cursive;
@@ -428,7 +354,37 @@
   position: relative;
   padding-top: 20px;
   font-weight: 600;
-  margin: 20px 0;
+  margin: 5px 0;
+}
+.landing-page__case-study__group .landing-page__case-study__card .card__description--author {
+  margin: 5px 0;
+}
+.landing-page__case-study__group #small-card--1, .landing-page__case-study__group #small-card--2 {
+  flex-basis: calc(50% - 150px);
+  margin-bottom: 0;
+}
+.landing-page__case-study__group #small-card--3 .card__description--title, .landing-page__case-study__group #small-card--4 .card__description--title, .landing-page__case-study__group #small-card--5 .card__description--title {
+  font-family: "Corben", cursive;
+  line-height: 3rem;
+  font-size: 2rem;
+  margin: 30px 0;
+  z-index: 1;
+  color: #ebebeb;
+}
+.landing-page__case-study__group #small-card--1 {
+  background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+}
+.landing-page__case-study__group #small-card--2 {
+  background-image: url("/src/assets/images/sofa.jpg"), linear-gradient(rgba(255, 180, 105, 0.6), rgba(255, 180, 105, 0.6));
+}
+.landing-page__case-study__group #small-card--3 {
+  background-image: url("/src/assets/images/kitchen.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+}
+.landing-page__case-study__group #small-card--4 {
+  background-image: url("/src/assets/images/kid.jpg"), linear-gradient(rgba(255, 158, 216, 0.6), rgba(255, 158, 216, 0.6));
+}
+.landing-page__case-study__group #small-card--5 {
+  background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
 }
 
 .landing-page__subscription {
@@ -499,6 +455,66 @@
 .landing-page__subscription .landing-page__subscription__form .landing-page__button:hover {
   background-color: #ffb469;
   color: #333350;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: start;
+  color: #ebebeb;
+  font-family: "Mulish", sans-serif;
+}
+.navigation-bar .navigation-item {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #ebebeb !important;
+  font-weight: 700;
+  position: relative;
+  cursor: pointer;
+  width: max-content;
+}
+.navigation-bar .navigation-item:hover.navigation-item::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ebebeb;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+.navigation-bar .navigation-item:focus.navigation-item::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ffb469;
+  position: absolute;
+  border-radius: 50%;
+}
+.navigation-bar .navigation-item:nth-child(8):hover.navigation-item:last-child::after, .navigation-bar .navigation-item:nth-child(8):focus.navigation-item:last-child::after {
+  display: none;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+@keyframes blinking {
+  0% {
+    border-right: 3px solid #ebebeb;
+  }
+  100% {
+    border-right: none;
+  }
+}
+.typing-text {
+  animation: typing 3s steps(40, end) infinite alternate, blinking 0.5s infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ebebeb;
+  width: fit-content;
 }
 
 .card__badget {
@@ -613,59 +629,6 @@
 body {
   background-color: #252530;
   margin: 0;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 45%;
-  }
-}
-.typing-text {
-  animation: typing 3s steps(40, end) infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #ebebeb;
-  width: fit-content;
-  width: fit-content;
-}
-
-.navigation-bar {
-  display: flex;
-  justify-content: start;
-  color: #ebebeb;
-  font-family: "Mulish", sans-serif;
-}
-.navigation-bar .navigation-item {
-  text-decoration: none;
-  margin: 0 10px;
-  color: #ebebeb !important;
-  font-weight: 700;
-  position: relative;
-  cursor: pointer;
-  width: max-content;
-}
-.navigation-bar .navigation-item:hover.navigation-item::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #ebebeb;
-  position: absolute;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-.navigation-bar .navigation-item:focus.navigation-item::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #ffb469;
-  position: absolute;
-  border-radius: 50%;
-}
-.navigation-bar .navigation-item:nth-child(8):hover.navigation-item:last-child::after, .navigation-bar .navigation-item:nth-child(8):focus.navigation-item:last-child::after {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

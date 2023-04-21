@@ -13,32 +13,25 @@
     margin: 20px 160px;
     
     &__card {
-        padding: 100px;
         max-height: 450px;
+        max-width: 1200px;
+        padding: 100px;
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         cursor: pointer;
-        max-width: 1200px;
         margin: 20px 0;
+        background-blend-mode: overlay;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100%;
+        transition: all .5s ease-in;
+        border-radius: 20px;
 
         &:hover {
-            .card__overlay__image {
-                transition: transform .3s ease-in;
-                transform: translateZ(0) scale(1.05);
-                z-index: -999;
-            }
-        }
-       
-        .card__overlay {
-            @include card-elements.overlay(colors.$color--secondary);
-
-            .card__overlay__image {
-                width: 100%;
-                height: 100%;
-                position: relative;
-            }
+           background-size: 110%;
         }
 
         .card__badget__group {
@@ -103,6 +96,16 @@
             }
         }
     }
+
+    #large-card--1 {
+        background-image: url("/src/assets/images/living-room--3d.jpg"), linear-gradient(rgba(colors.$color--secondary, .6), rgba(colors.$color--secondary, .6));
+    }
+    #large-card--2 {
+        background-image: url("/src/assets/images/minimal-room.jpg"), linear-gradient(rgba(colors.$color--amber, .6), rgba(colors.$color--amber, .6));
+    }
+    #large-card--3 {
+        background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(colors.$color--secondary, .6), rgba(colors.$color--secondary, .6));
+    }
 }
 
 .landing-page__case-study__group {
@@ -116,51 +119,18 @@
     .landing-page__case-study__card {
      flex-basis: 10%;
      padding: 40px;
-     height: 470px;
+     height: 370px;
      justify-content: flex-start;
      flex-basis: calc((33% - 130px) );
      margin-top: 0;
- 
-     
-     &:nth-child(1),  &:nth-child(2) {
-         flex-basis: calc(50% - 150px);
-         margin-bottom: 0;
+     background-size: 150%;
+
+     &:hover {
+        background-size: 160%;
      }
-
-     &:nth-child(1) {
-        .card__overlay {
-            &::before {
-                @include card-elements.overlay--before(colors.$color--eggplant)
-            }
-        }
-     }
-
-     &:nth-child(2) {
-        .card__overlay {
-            &::before {
-                @include card-elements.overlay--before(colors.$color--orange)
-            }
-        }
-     }
-
-     &:nth-child(4) {
-        .card__overlay {
-            &::before {
-                @include card-elements.overlay--before(colors.$color--cerise)
-            }
-        }
-     }
-
-    &:nth-child(3), &:nth-child(4), &:nth-child(5) {
-
-        .card__description--title {
-            @include card-elements.description--title(2rem, 20px 0, 3rem);
-        }
-
-    }
  
      .card__description--title {   
-        @include card-elements.description--title(2.5rem, 20px 0, 3.5rem);
+        @include card-elements.description--title(2.5rem, 5px 0, 3.5rem);
 
         &::after {
             @include icons.arrow(1.7rem)
@@ -175,7 +145,38 @@
      .card__description--content {
         @include card-elements.description--content(1rem, colors.$color--primary);
         font-weight: 600;
-        margin: 20px 0;
+        margin: 5px 0;
      }
+
+     .card__description--author {
+        margin: 5px 0;
+     }
+    }
+
+    #small-card--1, #small-card--2 {
+        flex-basis: calc(50% - 150px);
+        margin-bottom: 0;
+    }
+
+    #small-card--3,  #small-card--4,  #small-card--5 {
+        .card__description--title {
+            @include card-elements.description--title(2rem, 20px 0, 3rem);
+        }
+    }
+
+    #small-card--1 {
+        background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(colors.$color--secondary, .6), rgba(colors.$color--secondary, .6));    
+    }
+    #small-card--2 {
+        background-image: url("/src/assets/images/sofa.jpg"), linear-gradient(rgba(colors.$color--orange, .6), rgba(colors.$color--orange, .6));
+    }
+    #small-card--3 {
+        background-image: url("/src/assets/images/kitchen.jpg"), linear-gradient(rgba(colors.$color--secondary, .6), rgba(colors.$color--secondary, .6));
+    }
+    #small-card--4 {
+        background-image: url("/src/assets/images/kid.jpg"), linear-gradient(rgba(colors.$color--cerise, .6), rgba(colors.$color--cerise, .6));
+    }
+    #small-card--5 {
+        background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(colors.$color--secondary, .6), rgba(colors.$color--secondary, .6));
     }
  }

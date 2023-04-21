@@ -9,12 +9,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 55px 50px;
+    padding: 30px 55px;
     
     &__brand-name {
       font-weight: 900;
       font-size: 3rem;
-      padding: 0 40px;
+      padding: 0 10rem;
+    }
+
+    .navigation-bar {
+      padding: 0 10rem;
     }
   }
   

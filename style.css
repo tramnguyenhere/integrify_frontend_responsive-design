@@ -5,12 +5,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 55px 50px;
+  padding: 30px 55px;
 }
 .header__brand-name {
   font-weight: 900;
   font-size: 3rem;
-  padding: 0 40px;
+  padding: 0 10rem;
+}
+.header .navigation-bar {
+  padding: 0 10rem;
 }
 
 .landing-page__pinned-board {
@@ -19,6 +22,7 @@
   grid-template-areas: "card1 card2 card3" "card1 card4 card5";
   min-height: 400px;
   padding: 0 50px;
+  margin: 0 6rem;
 }
 .landing-page__pinned-board__card {
   background-size: 100%;
@@ -283,15 +287,6 @@
 }
 .landing-page__case-study__card:nth-child(2) .card__description--title, .landing-page__case-study__card:nth-child(2) .card__description--content, .landing-page__case-study__card:nth-child(2) .card__description--author, .landing-page__case-study__card:nth-child(4) .card__description--title, .landing-page__case-study__card:nth-child(4) .card__description--content, .landing-page__case-study__card:nth-child(4) .card__description--author {
   color: #333350 !important;
-}
-.landing-page__case-study__card:nth-child(2) .card__overlay::before, .landing-page__case-study__card:nth-child(4) .card__overlay::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #ffdd87;
-  opacity: 0.7;
-  z-index: 11111;
-  position: absolute;
 }
 .landing-page__case-study #large-card--1 {
   background-image: url("/src/assets/images/living-room--3d.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
@@ -560,7 +555,7 @@
   flex-direction: column;
   align-items: center;
 }
-.landing-page .landing-page__sub-title {
+.landing-page__sub-title {
   font-family: "Mulish", sans-serif;
   font-weight: 800;
   color: #ebebeb;
@@ -568,7 +563,7 @@
   font-size: 1rem;
   padding: 60px 0;
 }
-.landing-page .landing-page__button {
+.landing-page__button {
   font-size: 0.9rem;
   font-weight: 700;
   color: #ebebeb;
@@ -583,9 +578,19 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-.landing-page .landing-page__button:hover {
+.landing-page__button:hover {
   background-color: #ffb469;
   color: #333350;
+}
+.landing-page__sologan {
+  color: #ebebeb;
+  transform: rotate(-90deg);
+  position: sticky;
+  top: 50%;
+  right: 120%;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .footer {

@@ -89,11 +89,7 @@
                 color: colors.$color--secondary !important;
             }
 
-            .card__overlay {
-                &::before {
-                    @include card-elements.overlay--before(colors.$color--amber)
-                }
-            }
+            
         }
     }
 

@@ -156,6 +156,11 @@
     #small-card--3,  #small-card--4,  #small-card--5 {
         .card__description--title {
             @include card-elements.description--title(2rem, 3rem);
+
+            @media screen and (max-width: 1440px) {
+                font-size: 2rem;
+                line-height: 2rem;
+            }
         }
     }
 

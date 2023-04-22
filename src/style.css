@@ -59,6 +59,11 @@
   transition: all 0.3s ease-in-out;
   border: none;
 }
+@media screen and (max-width: 1440px) {
+  .landing-page__pinned-board__card:nth-child(1) .card__badget {
+    font-size: 0.5rem;
+  }
+}
 .landing-page__pinned-board__card:nth-child(1) .card__description--title {
   font-family: 'Corben', cursive;
   line-height: 4rem;
@@ -86,6 +91,11 @@
   border: 1px solid #1423ff;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 1440px) {
+  .landing-page__pinned-board__card:nth-child(2) .card__badget {
+    font-size: 0.5rem;
+  }
+}
 .landing-page__pinned-board__card:nth-child(3) {
   grid-area: card3;
   background-color: #ffb469;
@@ -103,6 +113,11 @@
   color: #ffb469;
   border: 1px solid #ffb469;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1440px) {
+  .landing-page__pinned-board__card:nth-child(3) .card__badget {
+    font-size: 0.5rem;
+  }
 }
 .landing-page__pinned-board__card:nth-child(3) .card__description--title,
 .landing-page__pinned-board__card:nth-child(3) .card__description--author {
@@ -127,6 +142,11 @@
   border: 1px solid #77008f;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 1440px) {
+  .landing-page__pinned-board__card:nth-child(4) .card__badget {
+    font-size: 0.5rem;
+  }
+}
 .landing-page__pinned-board__card:nth-child(5) {
   grid-area: card5;
   background-image: url('./assets/images/kid.jpg'),
@@ -145,6 +165,11 @@
   color: #ff9ed8;
   border: 1px solid #ff9ed8;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1440px) {
+  .landing-page__pinned-board__card:nth-child(5) .card__badget {
+    font-size: 0.5rem;
+  }
 }
 .landing-page__pinned-board__card:nth-child(5) .card__description--title,
 .landing-page__pinned-board__card:nth-child(5) .card__description--author {
@@ -196,6 +221,11 @@
   border: 1px solid #ebebeb;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 1440px) {
+  .landing-page__case-study__card .card__badget__group .card__badget {
+    font-size: 0.5rem;
+  }
+}
 .landing-page__case-study__card .card__badget__group .card__badget:hover {
   font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
@@ -209,6 +239,11 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1440px) {
+  .landing-page__case-study__card .card__badget__group .card__badget:hover {
+    font-size: 0.5rem;
+  }
 }
 .landing-page__case-study__card .card__description--title {
   font-family: 'Corben', cursive;
@@ -276,6 +311,12 @@
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
 }
+@media screen and (max-width: 1440px) {
+  .landing-page__case-study__card:nth-child(2) .card__badget,
+  .landing-page__case-study__card:nth-child(4) .card__badget {
+    font-size: 0.5rem;
+  }
+}
 .landing-page__case-study__card:nth-child(2) .card__badget:hover,
 .landing-page__case-study__card:nth-child(4) .card__badget:hover {
   font-family: 'Mulish', sans-serif;
@@ -291,6 +332,12 @@
   border: 1px solid #ffdd87;
   transition: all 0.3s ease-in-out;
   border: none;
+}
+@media screen and (max-width: 1440px) {
+  .landing-page__case-study__card:nth-child(2) .card__badget:hover,
+  .landing-page__case-study__card:nth-child(4) .card__badget:hover {
+    font-size: 0.5rem;
+  }
 }
 .landing-page__case-study__card:nth-child(2) .card__description--title,
 .landing-page__case-study__card:nth-child(2) .card__description--content,
@@ -393,6 +440,14 @@
   margin: 20px 0;
   z-index: 1;
   color: #ebebeb;
+}
+@media screen and (max-width: 1440px) {
+  .landing-page__case-study__group #small-card--3 .card__description--title,
+  .landing-page__case-study__group #small-card--4 .card__description--title,
+  .landing-page__case-study__group #small-card--5 .card__description--title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 .landing-page__case-study__group #small-card--1 {
   background-image: url('./assets/images/studio.jpg'),
@@ -569,6 +624,11 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 1440px) {
+  .card__badget {
+    font-size: 0.5rem;
+  }
 }
 
 .card__description {

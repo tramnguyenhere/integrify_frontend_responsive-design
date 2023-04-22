@@ -57,6 +57,8 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
   border: none;
 }
 @media screen and (max-width: 1440px) {
@@ -89,6 +91,8 @@
   color: #1423ff;
   border: 1px solid #1423ff;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(2) .card__badget {
@@ -112,6 +116,8 @@
   color: #ffb469;
   border: 1px solid #ffb469;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(3) .card__badget {
@@ -138,6 +144,8 @@
   color: #77008f;
   border: 1px solid #77008f;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(4) .card__badget {
@@ -161,6 +169,8 @@
   color: #ff9ed8;
   border: 1px solid #ff9ed8;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(5) .card__badget {
@@ -215,6 +225,8 @@
   color: #ebebeb;
   border: 1px solid #ebebeb;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__case-study__card .card__badget__group .card__badget {
@@ -234,6 +246,8 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__case-study__card .card__badget__group .card__badget:hover {
@@ -303,6 +317,8 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__case-study__card:nth-child(2) .card__badget, .landing-page__case-study__card:nth-child(4) .card__badget {
@@ -322,6 +338,8 @@
   color: #ffdd87;
   border: 1px solid #ffdd87;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
   border: none;
 }
 @media screen and (max-width: 1440px) {
@@ -364,8 +382,8 @@
 }
 .landing-page__case-study__group .landing-page__case-study__card .card__description--title {
   font-family: "Corben", cursive;
-  line-height: 3.5rem;
-  font-size: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 2rem;
   margin: 20px 0;
   z-index: 1;
   color: #ebebeb;
@@ -404,8 +422,8 @@
 }
 .landing-page__case-study__group #small-card--3 .card__description--title, .landing-page__case-study__group #small-card--4 .card__description--title, .landing-page__case-study__group #small-card--5 .card__description--title {
   font-family: "Corben", cursive;
-  line-height: 3rem;
-  font-size: 2rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
   margin: 20px 0;
   z-index: 1;
   color: #ebebeb;
@@ -575,6 +593,8 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .card__badget {

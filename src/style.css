@@ -1,7 +1,7 @@
-@import url("font-awesome/css/fontawesome-all.min.css");
+@import url('font-awesome/css/fontawesome-all.min.css');
 .header {
   color: #ebebeb;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,7 @@
 .landing-page__pinned-board {
   display: grid;
   gap: 25px;
-  grid-template-areas: "card1 card2 card3" "card1 card4 card5";
+  grid-template-areas: 'card1 card2 card3' 'card1 card4 card5';
   min-height: 400px;
   padding: 0 50px;
   margin: 0 6rem;
@@ -42,10 +42,10 @@
 }
 .landing-page__pinned-board__card:nth-child(1) {
   grid-area: card1;
-  background-image: url("/src/assets/images/living-room.jpg");
+  background-image: url('./assets/images/living-room.jpg');
 }
 .landing-page__pinned-board__card:nth-child(1) .card__badget {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -57,6 +57,8 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
   border: none;
 }
 @media screen and (max-width: 1440px) {
@@ -65,7 +67,7 @@
   }
 }
 .landing-page__pinned-board__card:nth-child(1) .card__description--title {
-  font-family: "Corben", cursive;
+  font-family: 'Corben', cursive;
   line-height: 4rem;
   font-size: 3rem;
   margin: 20px 0;
@@ -74,10 +76,11 @@
 }
 .landing-page__pinned-board__card:nth-child(2) {
   grid-area: card2;
-  background-image: url("/src/assets/images/kitchen.jpg"), linear-gradient(#1423ff, #1423ff);
+  background-image: url('./assets/images/kitchen.jpg'),
+    linear-gradient(#1423ff, #1423ff);
 }
 .landing-page__pinned-board__card:nth-child(2) .card__badget {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -89,6 +92,8 @@
   color: #1423ff;
   border: 1px solid #1423ff;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(2) .card__badget {
@@ -100,7 +105,7 @@
   background-color: #ffb469;
 }
 .landing-page__pinned-board__card:nth-child(3) .card__badget {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -112,21 +117,25 @@
   color: #ffb469;
   border: 1px solid #ffb469;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(3) .card__badget {
     font-size: 0.5rem;
   }
 }
-.landing-page__pinned-board__card:nth-child(3) .card__description--title, .landing-page__pinned-board__card:nth-child(3) .card__description--author {
+.landing-page__pinned-board__card:nth-child(3) .card__description--title,
+.landing-page__pinned-board__card:nth-child(3) .card__description--author {
   color: #333350;
 }
 .landing-page__pinned-board__card:nth-child(4) {
   grid-area: card4;
-  background-image: url("/src/assets/images/office.jpg"), linear-gradient(#77008f, #77008f);
+  background-image: url('./assets/images/office.jpg'),
+    linear-gradient(#77008f, #77008f);
 }
 .landing-page__pinned-board__card:nth-child(4) .card__badget {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -138,6 +147,8 @@
   color: #77008f;
   border: 1px solid #77008f;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(4) .card__badget {
@@ -146,10 +157,11 @@
 }
 .landing-page__pinned-board__card:nth-child(5) {
   grid-area: card5;
-  background-image: url("/src/assets/images/kid.jpg"), linear-gradient(#ff9ed8, #ff9ed8);
+  background-image: url('./assets/images/kid.jpg'),
+    linear-gradient(#ff9ed8, #ff9ed8);
 }
 .landing-page__pinned-board__card:nth-child(5) .card__badget {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -161,13 +173,16 @@
   color: #ff9ed8;
   border: 1px solid #ff9ed8;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(5) .card__badget {
     font-size: 0.5rem;
   }
 }
-.landing-page__pinned-board__card:nth-child(5) .card__description--title, .landing-page__pinned-board__card:nth-child(5) .card__description--author {
+.landing-page__pinned-board__card:nth-child(5) .card__description--title,
+.landing-page__pinned-board__card:nth-child(5) .card__description--author {
   color: #333350;
 }
 
@@ -203,7 +218,7 @@
 }
 .landing-page__case-study__card .card__badget__group .card__badget {
   margin-right: 10px;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -215,6 +230,8 @@
   color: #ebebeb;
   border: 1px solid #ebebeb;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__case-study__card .card__badget__group .card__badget {
@@ -222,7 +239,7 @@
   }
 }
 .landing-page__case-study__card .card__badget__group .card__badget:hover {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -234,6 +251,8 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__case-study__card .card__badget__group .card__badget:hover {
@@ -241,7 +260,7 @@
   }
 }
 .landing-page__case-study__card .card__description--title {
-  font-family: "Corben", cursive;
+  font-family: 'Corben', cursive;
   line-height: 5rem;
   font-size: 4rem;
   margin: 20px 0;
@@ -251,21 +270,22 @@
   transition: 0.3s linear;
 }
 .landing-page__case-study__card .card__description--title::after {
-  content: "\f061";
-  font-family: "Font Awesome 5 Free";
+  content: '\f061';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   font-size: 3rem;
   transform: translateX(0);
   opacity: 0;
   position: absolute;
 }
-.landing-page__case-study__card .card__description--title:hover.card__description--title::after {
+.landing-page__case-study__card
+  .card__description--title:hover.card__description--title::after {
   transform: translateX(20px);
   transition: all 0.3s linear;
   opacity: 1;
 }
 .landing-page__case-study__card .card__description--content {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.5rem;
   z-index: 1;
   color: #333350;
@@ -275,7 +295,7 @@
   margin: 30px 0;
 }
 .landing-page__case-study__card .card__description--content::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -283,15 +303,16 @@
   border: 1px solid #333350;
 }
 .landing-page__case-study__card .card__description--author {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   margin: 30px 0;
   z-index: 1;
   color: #ebebeb;
 }
-.landing-page__case-study__card:nth-child(2) .card__badget, .landing-page__case-study__card:nth-child(4) .card__badget {
-  font-family: "Mulish", sans-serif;
+.landing-page__case-study__card:nth-child(2) .card__badget,
+.landing-page__case-study__card:nth-child(4) .card__badget {
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -303,14 +324,18 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
-  .landing-page__case-study__card:nth-child(2) .card__badget, .landing-page__case-study__card:nth-child(4) .card__badget {
+  .landing-page__case-study__card:nth-child(2) .card__badget,
+  .landing-page__case-study__card:nth-child(4) .card__badget {
     font-size: 0.5rem;
   }
 }
-.landing-page__case-study__card:nth-child(2) .card__badget:hover, .landing-page__case-study__card:nth-child(4) .card__badget:hover {
-  font-family: "Mulish", sans-serif;
+.landing-page__case-study__card:nth-child(2) .card__badget:hover,
+.landing-page__case-study__card:nth-child(4) .card__badget:hover {
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -322,24 +347,35 @@
   color: #ffdd87;
   border: 1px solid #ffdd87;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
   border: none;
 }
 @media screen and (max-width: 1440px) {
-  .landing-page__case-study__card:nth-child(2) .card__badget:hover, .landing-page__case-study__card:nth-child(4) .card__badget:hover {
+  .landing-page__case-study__card:nth-child(2) .card__badget:hover,
+  .landing-page__case-study__card:nth-child(4) .card__badget:hover {
     font-size: 0.5rem;
   }
 }
-.landing-page__case-study__card:nth-child(2) .card__description--title, .landing-page__case-study__card:nth-child(2) .card__description--content, .landing-page__case-study__card:nth-child(2) .card__description--author, .landing-page__case-study__card:nth-child(4) .card__description--title, .landing-page__case-study__card:nth-child(4) .card__description--content, .landing-page__case-study__card:nth-child(4) .card__description--author {
+.landing-page__case-study__card:nth-child(2) .card__description--title,
+.landing-page__case-study__card:nth-child(2) .card__description--content,
+.landing-page__case-study__card:nth-child(2) .card__description--author,
+.landing-page__case-study__card:nth-child(4) .card__description--title,
+.landing-page__case-study__card:nth-child(4) .card__description--content,
+.landing-page__case-study__card:nth-child(4) .card__description--author {
   color: #333350 !important;
 }
 .landing-page__case-study #large-card--1 {
-  background-image: url("/src/assets/images/living-room--3d.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+  background-image: url('./assets/images/living-room--3d.jpg'),
+    linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
 }
 .landing-page__case-study #large-card--2 {
-  background-image: url("/src/assets/images/minimal-room.jpg"), linear-gradient(rgba(255, 221, 135, 0.6), rgba(255, 221, 135, 0.6));
+  background-image: url('./assets/images/minimal-room.jpg'),
+    linear-gradient(rgba(255, 221, 135, 0.6), rgba(255, 221, 135, 0.6));
 }
 .landing-page__case-study #large-card--3 {
-  background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+  background-image: url('./assets/images/studio.jpg'),
+    linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
 }
 
 .landing-page__case-study__group {
@@ -362,30 +398,38 @@
 .landing-page__case-study__group .landing-page__case-study__card:hover {
   background-size: 160%;
 }
-.landing-page__case-study__group .landing-page__case-study__card .card__description--title {
-  font-family: "Corben", cursive;
-  line-height: 3.5rem;
-  font-size: 2.5rem;
+.landing-page__case-study__group
+  .landing-page__case-study__card
+  .card__description--title {
+  font-family: 'Corben', cursive;
+  line-height: 2.5rem;
+  font-size: 2rem;
   margin: 20px 0;
   z-index: 1;
   color: #ebebeb;
 }
-.landing-page__case-study__group .landing-page__case-study__card .card__description--title::after {
-  content: "\f061";
-  font-family: "Font Awesome 5 Free";
+.landing-page__case-study__group
+  .landing-page__case-study__card
+  .card__description--title::after {
+  content: '\f061';
+  font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   font-size: 1.7rem;
   transform: translateX(0);
   opacity: 0;
   position: absolute;
 }
-.landing-page__case-study__group .landing-page__case-study__card .card__description--title:hover.card__description--title::after {
+.landing-page__case-study__group
+  .landing-page__case-study__card
+  .card__description--title:hover.card__description--title::after {
   transform: translateX(10px);
   transition: all 0.3s linear;
   opacity: 1;
 }
-.landing-page__case-study__group .landing-page__case-study__card .card__description--content {
-  font-family: "Mulish", sans-serif;
+.landing-page__case-study__group
+  .landing-page__case-study__card
+  .card__description--content {
+  font-family: 'Mulish', sans-serif;
   font-size: 1rem;
   z-index: 1;
   color: #ebebeb;
@@ -395,41 +439,53 @@
   font-weight: 600;
   margin: 5px 0;
 }
-.landing-page__case-study__group .landing-page__case-study__card .card__description--author {
+.landing-page__case-study__group
+  .landing-page__case-study__card
+  .card__description--author {
   margin: 5px 0;
 }
-.landing-page__case-study__group #small-card--1, .landing-page__case-study__group #small-card--2 {
+.landing-page__case-study__group #small-card--1,
+.landing-page__case-study__group #small-card--2 {
   flex-basis: calc(50% - 150px);
   margin-bottom: 0;
 }
-.landing-page__case-study__group #small-card--3 .card__description--title, .landing-page__case-study__group #small-card--4 .card__description--title, .landing-page__case-study__group #small-card--5 .card__description--title {
-  font-family: "Corben", cursive;
-  line-height: 3rem;
-  font-size: 2rem;
+.landing-page__case-study__group #small-card--3 .card__description--title,
+.landing-page__case-study__group #small-card--4 .card__description--title,
+.landing-page__case-study__group #small-card--5 .card__description--title {
+  font-family: 'Corben', cursive;
+  line-height: 2rem;
+  font-size: 1.5rem;
   margin: 20px 0;
   z-index: 1;
   color: #ebebeb;
 }
 @media screen and (max-width: 1440px) {
-  .landing-page__case-study__group #small-card--3 .card__description--title, .landing-page__case-study__group #small-card--4 .card__description--title, .landing-page__case-study__group #small-card--5 .card__description--title {
+  .landing-page__case-study__group #small-card--3 .card__description--title,
+  .landing-page__case-study__group #small-card--4 .card__description--title,
+  .landing-page__case-study__group #small-card--5 .card__description--title {
     font-size: 2rem;
     line-height: 2rem;
   }
 }
 .landing-page__case-study__group #small-card--1 {
-  background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+  background-image: url('./assets/images/studio.jpg'),
+    linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
 }
 .landing-page__case-study__group #small-card--2 {
-  background-image: url("/src/assets/images/sofa.jpg"), linear-gradient(rgba(255, 180, 105, 0.6), rgba(255, 180, 105, 0.6));
+  background-image: url('./assets/images/sofa.jpg'),
+    linear-gradient(rgba(255, 180, 105, 0.6), rgba(255, 180, 105, 0.6));
 }
 .landing-page__case-study__group #small-card--3 {
-  background-image: url("/src/assets/images/kitchen.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+  background-image: url('./assets/images/kitchen.jpg'),
+    linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
 }
 .landing-page__case-study__group #small-card--4 {
-  background-image: url("/src/assets/images/kid.jpg"), linear-gradient(rgba(255, 158, 216, 0.6), rgba(255, 158, 216, 0.6));
+  background-image: url('./assets/images/kid.jpg'),
+    linear-gradient(rgba(255, 158, 216, 0.6), rgba(255, 158, 216, 0.6));
 }
 .landing-page__case-study__group #small-card--5 {
-  background-image: url("/src/assets/images/studio.jpg"), linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
+  background-image: url('./assets/images/studio.jpg'),
+    linear-gradient(rgba(51, 51, 80, 0.6), rgba(51, 51, 80, 0.6));
 }
 
 .landing-page__subscription {
@@ -445,11 +501,11 @@
 .landing-page__subscription .landing-page__subscription__heading {
   font-size: 3rem;
   line-height: 3.5rem;
-  font-family: "Corben", cursive;
+  font-family: 'Corben', cursive;
   margin: 0;
 }
 .landing-page__subscription .landing-page__subscription__sub-heading {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.5rem;
 }
 .landing-page__subscription .landing-page__subscription__form {
@@ -469,20 +525,26 @@
   text-align: center;
   font-size: 1.5rem;
   font-weight: 800;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   padding: 10px 0;
   transition: all 0.4s ease-in;
 }
-.landing-page__subscription .landing-page__subscription__form .form__input::placeholder {
+.landing-page__subscription
+  .landing-page__subscription__form
+  .form__input::placeholder {
   text-align: center;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
 }
-.landing-page__subscription .landing-page__subscription__form .form__input:focus {
+.landing-page__subscription
+  .landing-page__subscription__form
+  .form__input:focus {
   width: 100%;
 }
-.landing-page__subscription .landing-page__subscription__form .landing-page__button {
+.landing-page__subscription
+  .landing-page__subscription__form
+  .landing-page__button {
   font-size: 0.9rem;
   font-weight: 700;
   color: #ebebeb;
@@ -497,7 +559,9 @@
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-.landing-page__subscription .landing-page__subscription__form .landing-page__button:hover {
+.landing-page__subscription
+  .landing-page__subscription__form
+  .landing-page__button:hover {
   background-color: #ffb469;
   color: #333350;
 }
@@ -506,7 +570,7 @@
   display: flex;
   justify-content: start;
   color: #ebebeb;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 .navigation-bar .navigation-item {
   text-decoration: none;
@@ -518,7 +582,7 @@
   width: max-content;
 }
 .navigation-bar .navigation-item:hover.navigation-item::after {
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   background-color: #ebebeb;
@@ -527,14 +591,17 @@
   opacity: 0.5;
 }
 .navigation-bar .navigation-item:focus.navigation-item::after {
-  content: "";
+  content: '';
   width: 6px;
   height: 6px;
   background-color: #ffb469;
   position: absolute;
   border-radius: 50%;
 }
-.navigation-bar .navigation-item:nth-child(8):hover.navigation-item:last-child::after, .navigation-bar .navigation-item:nth-child(8):focus.navigation-item:last-child::after {
+.navigation-bar
+  .navigation-item:nth-child(8):hover.navigation-item:last-child::after,
+.navigation-bar
+  .navigation-item:nth-child(8):focus.navigation-item:last-child::after {
   display: none;
 }
 
@@ -563,7 +630,7 @@
 }
 
 .card__badget {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 0.7rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -575,6 +642,8 @@
   color: #333350;
   border: 1px solid #333350;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 @media screen and (max-width: 1440px) {
   .card__badget {
@@ -588,7 +657,7 @@
   margin-top: 40px;
 }
 .card__description--author {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   margin: 10px 0;
@@ -596,7 +665,7 @@
   color: #ebebeb;
 }
 .card__description--title {
-  font-family: "Corben", cursive;
+  font-family: 'Corben', cursive;
   line-height: 2rem;
   font-size: 1.5rem;
   margin: 20px 0;
@@ -610,7 +679,7 @@
   align-items: center;
 }
 .landing-page__sub-title {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 800;
   color: #ebebeb;
   letter-spacing: 3px;
@@ -642,14 +711,14 @@
   position: sticky;
   top: 50%;
   right: 120%;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 700;
   font-size: 1rem;
 }
 
 .footer {
   color: #ebebeb;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -679,7 +748,7 @@
   color: #ffb469;
 }
 .footer__credit {
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 700;
   font-size: 0.8rem;
   opacity: 0.7;

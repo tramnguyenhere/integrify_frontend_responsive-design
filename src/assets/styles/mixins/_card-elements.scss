@@ -3,7 +3,7 @@
 
 @mixin card-badget($color--primary,$background-color) {
     font-family:fonts.$font--secondary;
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     font-weight: 900;
     letter-spacing: 2px;
     background-color: $background-color;
@@ -16,6 +16,7 @@
     transition: all .3s ease-in-out;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @media screen and (max-width: 1440px) {
         font-size: 0.5rem;

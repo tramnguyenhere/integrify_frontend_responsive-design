@@ -46,7 +46,7 @@
 }
 .landing-page__pinned-board__card:nth-child(1) .card__badget {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: #ebebeb;
@@ -59,6 +59,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
   border: none;
 }
 @media screen and (max-width: 1440px) {
@@ -81,7 +82,7 @@
 }
 .landing-page__pinned-board__card:nth-child(2) .card__badget {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: #ebebeb;
@@ -94,6 +95,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(2) .card__badget {
@@ -106,7 +108,7 @@
 }
 .landing-page__pinned-board__card:nth-child(3) .card__badget {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: #333350;
@@ -119,6 +121,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(3) .card__badget {
@@ -136,7 +139,7 @@
 }
 .landing-page__pinned-board__card:nth-child(4) .card__badget {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: #ebebeb;
@@ -149,6 +152,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(4) .card__badget {
@@ -162,7 +166,7 @@
 }
 .landing-page__pinned-board__card:nth-child(5) .card__badget {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: #333350;
@@ -175,6 +179,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__pinned-board__card:nth-child(5) .card__badget {
@@ -219,7 +224,7 @@
 .landing-page__case-study__card .card__badget__group .card__badget {
   margin-right: 10px;
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: transparent;
@@ -232,6 +237,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__case-study__card .card__badget__group .card__badget {
@@ -240,7 +246,7 @@
 }
 .landing-page__case-study__card .card__badget__group .card__badget:hover {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: #ebebeb;
@@ -253,6 +259,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__case-study__card .card__badget__group .card__badget:hover {
@@ -313,7 +320,7 @@
 .landing-page__case-study__card:nth-child(2) .card__badget,
 .landing-page__case-study__card:nth-child(4) .card__badget {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: transparent;
@@ -326,6 +333,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1440px) {
   .landing-page__case-study__card:nth-child(2) .card__badget,
@@ -336,7 +344,7 @@
 .landing-page__case-study__card:nth-child(2) .card__badget:hover,
 .landing-page__case-study__card:nth-child(4) .card__badget:hover {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: #333350;
@@ -349,6 +357,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
   border: none;
 }
 @media screen and (max-width: 1440px) {
@@ -631,7 +640,7 @@
 
 .card__badget {
   font-family: 'Mulish', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.5rem;
   font-weight: 900;
   letter-spacing: 2px;
   background-color: #ebebeb;
@@ -644,6 +653,7 @@
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 1440px) {
   .card__badget {

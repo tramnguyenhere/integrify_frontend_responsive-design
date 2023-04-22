@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "copyfiles": "^2.4.1",
     "sass": "^1.62.0"
   }
 }

@@ -1,0 +1,91 @@
+@use "../../variables/colors" as colors;
+@use "../../variables/fonts" as fonts;
+@use "../../mixins/card-elements" as card-elements;
+
+.landing-page__pinned-board {
+    display: grid;
+    gap: 25px;
+    grid-template-areas:
+      'card1 card2 card3'
+      'card1 card4 card5';
+    min-height: 400px;
+    padding: 0 50px;
+    margin: 0 6rem;
+
+    &__card {
+      background-size: 100%;
+      background-position: 50%;
+      background-size: cover;
+      border-radius: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px 30px;
+      background-blend-mode: overlay;
+
+      &:hover {
+        transform: translate(0, -4px);
+        transition: 0.3s ease;
+      }
+
+      &:nth-child(1) {
+        grid-area: card1;
+        background-image: url('/src/assets/images/living-room.jpg');
+
+        .card__badget {
+          @include card-elements.card-badget(colors.$color--secondary, colors.$color--primary);
+          border: none;
+        }
+
+        .card__description--title {
+          @include card-elements.description--title(3rem, 0, 4rem)
+        }
+      }
+
+      &:nth-child(2) {
+        grid-area: card2;
+        background-image: url('/src/assets/images/kitchen.jpg'),  linear-gradient( colors.$color--ultramarine, colors.$color--ultramarine);
+        
+        .card__badget {
+          @include card-elements.card-badget(colors.$color--ultramarine, colors.$color--primary);
+        }
+      }
+
+      &:nth-child(3) {
+        grid-area: card3;
+        background-color:colors.$color--orange;
+
+        .card__badget {
+          @include card-elements.card-badget(colors.$color--orange, colors.$color--secondary);
+        }
+
+        .card__description--title, .card__description--author {
+          color:colors.$color--secondary;
+        }
+      }
+
+      &:nth-child(4) {
+        grid-area: card4;
+        background-image: url('/src/assets/images/office.jpg'),  linear-gradient( colors.$color--eggplant, colors.$color--eggplant);
+
+        .card__badget {
+          @include card-elements.card-badget(colors.$color--eggplant, colors.$color--primary)
+        }
+      }
+
+      &:nth-child(5) {
+        grid-area: card5;
+        background-image: url('/src/assets/images/kid.jpg'),  linear-gradient( colors.$color--cerise, colors.$color--cerise);
+
+        .card__badget {
+          @include card-elements.card-badget(colors.$color--cerise, colors.$color--secondary);
+        }
+
+        .card__description--title, .card__description--author {
+          color:colors.$color--secondary;
+        }
+      }
+    }
+  }
+

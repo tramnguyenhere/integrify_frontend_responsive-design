@@ -4,7 +4,7 @@ This project uses basic HTML elements to write short introduction about myself.
 
 ## Link to the demo
 
-[https://responsive-design-tramnguyenhere.netlify.app](https://responsive-design-tramnguyenhere.netlify.app)
+[https://integrify-frontend-responsive-design.vercel.app/](https://integrify-frontend-responsive-design.vercel.app/)
 
 ## Table of content
 

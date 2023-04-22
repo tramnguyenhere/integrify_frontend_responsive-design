@@ -1,0 +1,12 @@
+@use "./variables/colors" as colors;
+@use "./variables/fonts" as fonts;
+@use "./mixins/icons" as icons;
+
+@use "./components/header";
+@use "./components/main";
+@use "./components/footer";
+
+body {
+  background-color: colors.$background-color--primary;
+  margin: 0;
+}

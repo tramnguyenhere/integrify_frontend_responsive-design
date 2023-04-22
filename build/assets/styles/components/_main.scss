@@ -1,0 +1,60 @@
+@use "./landing-page/pinned-board";
+@use "./landing-page/case-study";
+@use "./landing-page/subscription";
+@use "../shared/navigation";
+@use "../shared/animations";
+
+@use "../variables/colors" as colors;
+@use "../variables/fonts" as fonts;
+@use "../mixins/buttons" as buttons;
+@use "../mixins/card-elements";
+
+.card__badget {
+    @include card-elements.card-badget(colors.$color--secondary, colors.$color--primary)
+}
+  
+.card__description {
+color: colors.$color--primary;
+z-index: 1;
+margin-top: 40px;
+
+&--author {
+    @include card-elements.description--author(1rem, 10px 0, colors.$color--primary)
+}
+
+&--title {
+    @include card-elements.description--title(1.5rem, 0, 2rem)
+}
+}
+
+.landing-page {
+    margin: 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__sub-title {
+        font-family: fonts.$font--secondary;
+        font-weight: 800;
+        color: colors.$color--primary;
+        letter-spacing: 3px;
+        font-size: 1rem;
+        padding: 60px 0;
+    }
+
+    &__button {
+        @include buttons.button(80%);
+    }
+
+    &__sologan {
+        color: colors.$color--primary;
+        transform: rotate(-90deg);
+        position: sticky;
+        top: 50%;
+        right: 120%;
+        font-family: fonts.$font--secondary;
+        font-weight: 700;
+        font-size: 1rem;
+
+    }
+}

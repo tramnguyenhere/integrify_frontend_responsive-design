@@ -29,6 +29,16 @@
     color: $color;
 }
 
+@mixin description--content($font-size, $color) {
+    font-family: fonts.$font--secondary;
+    font-size: $font-size;
+    z-index: 1;
+    color: $color;
+    font-weight: 700;
+    position: relative;
+    padding-top: 5px;
+}
+
 @mixin description--title($font-size, $line-height) {
     font-family:fonts.$font--primary;
     line-height: $line-height;
@@ -45,14 +55,4 @@
     left: 0;
     width: 3%;
     border: $height solid $color;
-}
-
-@mixin description--content($font-size, $color) {
-    font-family: fonts.$font--secondary;
-    font-size: $font-size;
-    z-index: 1;
-    color: $color;
-    font-weight: 700;
-    position: relative;
-    padding-top: 20px;
 }

@@ -25,11 +25,11 @@
     color: $color;
 }
 
-@mixin description--title($font-size, $margin, $line-height) {
+@mixin description--title($font-size, $line-height) {
     font-family:fonts.$font--primary;
     line-height: $line-height;
     font-size: $font-size;
-    margin: 30px 0;
+    margin: 20px 0;
     z-index: 1;
     color: colors.$color--primary;
 }

@@ -39,7 +39,7 @@
         }
 
         .card__description--title {
-          @include card-elements.description--title(3rem, 0, 4rem)
+          @include card-elements.description--title(3rem, 4rem)
         }
       }
 

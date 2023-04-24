@@ -1,6 +1,6 @@
-# Introduction to basic HTML Assignment
+# Responsive design
 
-This project uses basic HTML elements to write short introduction about myself.
+This project uses SASS and HTML to clone a website.
 
 ## Link to the demo
 
